@@ -2,7 +2,7 @@ import ldap from 'ldapjs';
 
 const server = ldap.createServer();
 
-const PORT = process.env.PORT || 1389;
+const PORT = process.env.PORT || 389;
 
 function createLdapUser (username, name, avatar) {
   return {
