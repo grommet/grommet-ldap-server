@@ -33,7 +33,7 @@ ldap.EqualityFilter.prototype.matches = function (target, strictAttrCase) {
   var value = this.value.toLowerCase();
 
   return helpers.testValues(function (v) {
-    return value === v && v.toLowerCase();
+    return value === v.toLowerCase();
   }, tv);
 };
 
