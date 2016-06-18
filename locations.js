@@ -1,9 +1,9 @@
 export default {
   "PAL20": {
-    "dn": "hpRealEstateID=PAL20, ou=locations, o=grommet.io",
+    "dn": "lid=PAL20, ou=locations, o=grommet.io",
     attributes: {
       "postalAddress": "3000 Hanover St. $ Palo Alto $ California $ United States $ 94304-1112",
-      "hpRealEstateID": "PAL20",
+      "lid": "PAL20",
       "objectClass": [
         "locality"
       ],
@@ -17,13 +17,15 @@ export default {
       "l": "Palo Alto",
       "c": "US",
       "timeZone": "-0800",
-      "buildingName": "PAL20"
+      "cn": "PAL20",
+      "telephoneNumber": "+1 (555) 555-5555",
+      "category": "Headquarters"
     }
   },
   "FTC06": {
-    "dn": "hpRealEstateID=FTC06, ou=Locations, o=grommet.io",
+    "dn": "lid=FTC06, ou=locations, o=grommet.io",
     "attributes": {
-      "hpRealEstateID": "FTC06",
+      "lid": "FTC06",
       "objectClass": [
         "locality"
       ],
@@ -38,7 +40,9 @@ export default {
       "l": "Ft. Collins",
       "c": "US",
       "timeZone": "-0700",
-      "buildingName": "FTC06"
+      "cn": "FTC06",
+      "telephoneNumber": "+1 (555) 555-5555",
+      "category": "Main Branch"
     }
   }
 };

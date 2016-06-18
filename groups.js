@@ -6,13 +6,13 @@ export default {
         "groupOfNames"
       ],
       "owner":[
-        "uid=chris.carlozzi@hpe.com, ou=people, o=grommet.io",
-        "uid=jacquot@hpe.com, ou=people, o=grommet.io"
+        "uid=chris.carlozzi@fake.grommet.io, ou=people, o=grommet.io",
+        "uid=jacquot@fake.grommet.io, ou=people, o=grommet.io"
       ],
       "cn": "grommet-designers",
       "description": "Group for grommet designers",
       "member":[
-        "uid=tracy.barmore@hpe.com, ou=people, o=grommet.io"
+        "uid=tracy.barmore@fake.grommet.io, ou=people, o=grommet.io"
       ]
     }
   },
@@ -23,13 +23,13 @@ export default {
         "groupOfNames"
       ],
       "owner":[
-        "uid=eric.soderberg@hpe.com, ou=people, o=grommet.io",
-        "uid=jacquot@hpe.com, ou=people, o=grommet.io"
+        "uid=eric.soderberg@fake.grommet.io, ou=people, o=grommet.io",
+        "uid=jacquot@fake.grommet.io, ou=people, o=grommet.io"
       ],
       "cn": "grommet-developers",
       "description": "Group for grommet developers",
       "member": [
-        "uid=asouza@hpe.com, ou=people, o=grommet.io"
+        "uid=asouza@fake.grommet.io, ou=people, o=grommet.io"
       ]
     }
   },
@@ -40,13 +40,14 @@ export default {
         "groupOfNames"
       ],
       "owner": [
-        "uid=tracy.barmore@hpe.com, ou=people, o=grommet.io"
+        "uid=tracy.barmore@fake.grommet.io, ou=people, o=grommet.io"
       ],
       "cn": "grommet-yen",
       "description": "Group for young grommet members",
       "member": [
-        "uid=asouza@hpe.com, ou=people, o=grommet.io"
-      ]
+        "uid=asouza@fake.grommet.io, ou=people, o=grommet.io"
+      ],
+      "email": "yen@grommet.io"
     }
   }
 };
