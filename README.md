@@ -45,8 +45,52 @@ ldapsearch -x -h ldap.grommet.io -b "ou=people, o=grommet.io" cn title
 
 # Locations
 
-Offices that are contributing to Grommet directly or indirectly.
+Work locations for offices that have people contributing to Grommet.
+
+### Schema
+
+| **Attribute** | **Description** |
+|--------|--------|
+|lid | required. unique code for the location (e.g. "PAL20") |
+|cn | required. unique code for the location (e.g. "PAL20") |
+|postalCode| required. location postal code |
+|postalAddress| required. full postal address separated by `$` (e.g. "3000 Hanover St. $ Palo Alto $ California $ United States $ 94304-1112")  |
+| street | required. location street |
+| st | required. location state |
+| l | required. location city |
+| co | required. location country |
+| c | required. location country short (e.g. "US") |
+| latitude | required. location latitude |
+| longitude | required. location longitude |
+| timeZone | required. location timezone difference from UTC (e.g. "+0200") |
+| telephoneNumber | optional. telephone number of the location |
+| category | optional. category for this location (e.g. "Headquarters")
+
+### Example Query
+
+1. List all grommet locations (returns lid and cn only)
+
+```
+ldapsearch -x -h ldap.grommet.io -b "ou=locations, o=grommet.io" lid cn
+```
 
 # Groups
 
 Groups for the Grommet.io organization (e.g. grommet-developers, grommet-designers, ...)
+
+### Schema
+
+| **Attribute** | **Description** |
+|--------|--------|
+|cn| required. group name.
+|description| required. useful description of the group's purpose.
+|owner | required. DN list of the group owners (e.g. ["`uid=tracy.barmore@fake.grommet.io, ou=people, o=grommet.io`"]) |
+|owner | required. DN list of the group members (e.g. ["`uid=asouza@fake.grommet.io, ou=people, o=grommet.io`"]) |
+
+### Example Query
+
+1. List all grommet groups
+
+```
+ldapsearch -x -h ldap.grommet.io -b "ou=groups, o=grommet.io"
+```
