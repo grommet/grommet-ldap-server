@@ -64,5 +64,27 @@ export default {
       "telephoneNumber": "+1 (555) 555-5555",
       "category": "Sweden Branch"
     }
+  },
+  "VOCE01": {
+    "dn": "lid=VOCE01, ou=locations, o=grommet.io",
+    attributes: {
+      "postalAddress": "298 South Sunnyvale Road $ Sunnyvale $ California $ US $ 94086",
+      "lid": "VOCE01",
+      "objectClass": [
+        "locality"
+      ],
+      "postalCode": "94086",
+      "co": "United States",
+      street: '298 South Sunnyvale Road.',
+      "st": "California",
+      "latitude": "+37.374239",
+      "longitude": "-122.029505",
+      "l": "Sunnyvale",
+      "c": "US",
+      "timeZone": "-0700",
+      "cn": "VOCE01",
+      "telephoneNumber": "+1 (555) 555-5555",
+      "category": "Marketing Branch"
+    }
   }
 };

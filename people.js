@@ -96,5 +96,21 @@ export default {
     },
     '124243',
     'uid=asouza@fake.grommet.io, ou=people, o=grommet.io'
+  ),
+  "randyksar": createLdapUser(
+    'randyksar@fake.grommet.io',
+    'Randy Ksar',
+    'https://s.gravatar.com/avatar/a2ee7bd9ea83d558f913e9371a1f0395',
+    'uid=jacquot@fake.grommet.io, ou=people, o=grommet.io',
+    'Vice President of Marketing',
+    {
+      buildName: 'VOCE01',
+      city: 'Sunnyvale',
+      state: 'California',
+      street: '298 South Sunnyvale Road Suite 100.',
+      postalCode: '94086'
+    },
+    '000002',
+    'uid=tracy.barmore@fake.grommet.io, ou=people, o=grommet.io'
   )
 };
