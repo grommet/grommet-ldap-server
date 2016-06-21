@@ -102,8 +102,9 @@ export default {
     'Randy Ksar',
     'https://s.gravatar.com/avatar/a2ee7bd9ea83d558f913e9371a1f0395',
     'uid=jacquot@fake.grommet.io, ou=people, o=grommet.io',
-    'Vice President of Marketing',
+    'Vice President, Marketing Office',
     {
+      companyName: 'Voce Communications',
       buildName: 'VOCE01',
       city: 'Sunnyvale',
       state: 'California',
